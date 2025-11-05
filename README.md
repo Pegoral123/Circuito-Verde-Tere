@@ -4,7 +4,7 @@ Projeto desenvolvido para Disciplina de MVP BACKEND com o objetivo de criar uma 
 
 ## 📜 Descrição
 
-A plataforma "Terê Verde" permite que visitantes acessem informações atualizadas sobre biodiversidade, trilhas, cachoeiras e eventos nos três principais parques da região. O sistema também conta com uma área administrativa para gestão do conteúdo.
+A plataforma "Circuito Terê Verde" permite que visitantes acessem informações atualizadas sobre biodiversidade, trilhas, cachoeiras e eventos nos três principais parques da região. O sistema também conta com uma área administrativa para gestão do conteúdo.
 
 ## ✨ Features (Funcionalidades)
 
