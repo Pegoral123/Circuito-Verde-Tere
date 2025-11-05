@@ -28,4 +28,4 @@ A plataforma "Terê Verde" permite que visitantes acessem informações atualiza
 ## 👥 Autores
 
 - Jhonathan da Silva Pegoral
-- Carlos [Sobrenome]
+- Carlos Henrique Cunha de Oliveira
