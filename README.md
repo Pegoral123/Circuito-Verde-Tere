@@ -23,7 +23,7 @@ A plataforma "Terê Verde" permite que visitantes acessem informações atualiza
 - **Backend:** Python 3, FastAPI
 - **Frontend:** TypeScript 
 - **Autenticação:** Firebase Authentication (ou JWT)
-- **Banco de Dados:** [Definir - ex: PostgreSQL, SQLite, Firebase Firestore]
+- **Banco de Dados:** A Definir
 
 ## 👥 Autores
 
