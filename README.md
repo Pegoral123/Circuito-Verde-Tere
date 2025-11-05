@@ -1,10 +1,10 @@
 # 🏞️ Circuito Terê Verde Online
 
-Projeto desenvolvido para [Nome da Disciplina/Cliente] com o objetivo de criar uma plataforma digital para promover o turismo ecológico e fornecer informações sobre os parques naturais de Teresópolis.
+Projeto desenvolvido para Disciplina de MVP BACKEND com o objetivo de criar uma plataforma digital para promover o turismo ecológico e fornecer informações sobre os parques naturais de Teresópolis.
 
 ## 📜 Descrição
 
-A plataforma "Terê Verde Online" permite que visitantes acessem informações atualizadas sobre biodiversidade, trilhas, cachoeiras e eventos nos três principais parques da região. O sistema também conta com uma área administrativa para gestão do conteúdo.
+A plataforma "Terê Verde" permite que visitantes acessem informações atualizadas sobre biodiversidade, trilhas, cachoeiras e eventos nos três principais parques da região. O sistema também conta com uma área administrativa para gestão do conteúdo.
 
 ## ✨ Features (Funcionalidades)
 
