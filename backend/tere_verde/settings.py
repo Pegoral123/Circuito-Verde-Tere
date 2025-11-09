@@ -1,17 +1,35 @@
+from pathlib import Path
+import os
+from dotenv import load_dotenv
 
+# Base directory do projeto
+BASE_DIR = Path(__file__).resolve().parent.parent
 
+# Carrega variáveis de ambiente do arquivo .env (se existir)
+load_dotenv(BASE_DIR / '.env')
 
-DEBUG = True  
+# SECRET_KEY: em produção, defina a variável DJANGO_SECRET_KEY no .env ou no ambiente
+SECRET_KEY = os.getenv('DJANGO_SECRET_KEY', 'replace-this-with-a-secure-key')
+
+# DEBUG (leitura segura de variável)
+DEBUG = True
+
+# Módulo de URL do projeto
+ROOT_URLCONF = 'tere_verde.urls'
+
+# WSGI application path
+WSGI_APPLICATION = 'tere_verde.wsgi.application'
 
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'tere_verde_db',
-        'USER': 'root',
-        'PASSWORD': '123Jhonath@n', 
-        'HOST': '127.0.0.1',                         
-        'PORT': '3306',
+        # Lendo as variáveis direto do arquivo .env
+        'ENGINE': os.getenv('DB_ENGINE'),
+        'NAME': os.getenv('DB_NAME'),
+        'USER': os.getenv('DB_USER'),
+        'PASSWORD': os.getenv('DB_PASSWORD'), 
+        'HOST': os.getenv('DB_HOST'),
+        'PORT': os.getenv('DB_PORT'),
         'OPTIONS': {
             'init_command': "SET sql_mode = 'STRICT_TRANS_TABLES'"
         }
@@ -30,12 +48,8 @@ INSTALLED_APPS = [
     'core',  
 ]
 
-# URL para servir arquivos estáticos em desenvolvimento
 STATIC_URL = '/static/'
 
-# Opcional: se quiser colocar uma pasta de estáticos do projeto (desenvolvimento)
-# STATICFILES_DIRS = [BASE_DIR / 'static']
-# Para coleta de estáticos em produção, defina STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
