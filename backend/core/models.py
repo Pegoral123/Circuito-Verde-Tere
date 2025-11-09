@@ -6,10 +6,13 @@ class Parque(models.Model):
     descricao = models.TextField()
     localizacao = models.CharField(max_length=255)
 
+    def __str__(self):
+        return self.nome
+
 
 class Trilha(models.Model):
     STATUS_CHOICES = [
-        ('ABERTA', 'ABERTA'),
+        ('ABERTA', 'Aberta'),
         ('FECHADA', 'Fechada'),
         ('EM_MANUTENCAO', 'Em Manutenção'),
     ]
@@ -30,11 +33,16 @@ class Evento(models.Model):
     local = models.CharField(max_length=255)
     descricao = models.TextField()   
 
+    def __str__(self):
+        return f"{self.titulo} ({self.parque.nome})"
+
 class Novidade(models.Model):
+    parque = models.ForeignKey(Parque, on_delete=models.SET_NULL, null=True, blank=True , related_name='novidades')
+    trilha = models.ForeignKey(Trilha, on_delete=models.SET_NULL, null=True, blank=True , related_name='novidades')
     titulo = models.CharField(max_length=100)
     conteudo = models.TextField()
     data_publicacao = models.DateField(auto_now_add=True)
 
     def __str__(self):
-        return self.titulo
+        return f"{self.trilha} - {self.titulo}"
 
