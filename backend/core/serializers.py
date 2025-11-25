@@ -1,4 +1,4 @@
-from rest_freamework import serializers
+from rest_framework import serializers
 from .models import Parque,Trilha,Evento, Novidade
 
 class TrilhaSerializer(serializers.ModelSerializer):
@@ -9,19 +9,19 @@ class TrilhaSerializer(serializers.ModelSerializer):
 class ParqueSerializer(serializers.ModelSerializer):
 
   trilhas = TrilhaSerializer(many=True, read_only=True)
-  class meta:
+  class Meta:
     model = Parque
     fields = ['id','nome','descricao','localizacao', 'trilhas']
 
 
-class EventoSerializer(serializers.modelSerializer):
-  class meta:
+class EventoSerializer(serializers.ModelSerializer):
+  class Meta:
     model = Evento
     fields = '__all__'
 
 
-class NovidadeSerializer(serializers.modelSerializer):
-  class meta:
+class NovidadeSerializer(serializers.ModelSerializer):
+  class Meta:
     model = Novidade
     fields = '__all__'
 
