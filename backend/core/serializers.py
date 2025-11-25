@@ -2,7 +2,7 @@ from rest_framework import serializers
 from .models import Parque,Trilha,Evento, Novidade
 
 class TrilhaSerializer(serializers.ModelSerializer):
-  class meta:
+  class Meta:
     model = Trilha
     fields = ['id','parque','nome','extensao_km','dificuldade','status']
 
