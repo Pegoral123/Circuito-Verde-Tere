@@ -36,14 +36,6 @@ Este repositório contém a **API RESTful** (Backend) que gerencia os dados e al
 
 ---
 
-## ⚙️ Como Rodar o Projeto Localmente
-
-### Pré-requisitos
-
-* Python 3 instalado.
-* MySQL Server rodando.
-* Git.
-
 ## 👥 Autores
 Jhonathan Pegoral 
 
