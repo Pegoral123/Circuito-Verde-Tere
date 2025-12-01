@@ -45,6 +45,6 @@ Este repositório contém a **API RESTful** (Backend) que gerencia os dados e al
 * Git.
 
 ## 👥 Autores
-Jhonathan Pegoral - Backend & DevOps
+Jhonathan Pegoral 
 
-Carlos - Frontend (Vue.js/TypeScript)
+Carlos 
