@@ -2,28 +2,27 @@ from pathlib import Path
 import os
 from dotenv import load_dotenv
 
-# Base directory do projeto
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-# Carrega variáveis de ambiente do arquivo .env (se existir)
+
 load_dotenv(BASE_DIR / '.env')
 
-# SECRET_KEY: em produção, defina a variável DJANGO_SECRET_KEY no .env ou no ambiente
+
 SECRET_KEY = os.getenv('DJANGO_SECRET_KEY', 'replace-this-with-a-secure-key')
 
-# DEBUG (leitura segura de variável)
+
 DEBUG = True
 
-# Módulo de URL do projeto
+
 ROOT_URLCONF = 'tere_verde.urls'
 
-# WSGI application path
+
 WSGI_APPLICATION = 'tere_verde.wsgi.application'
 
 
 DATABASES = {
     'default': {
-        # Lendo as variáveis direto do arquivo .env
         'ENGINE': os.getenv('DB_ENGINE'),
         'NAME': os.getenv('DB_NAME'),
         'USER': os.getenv('DB_USER'),
