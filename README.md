@@ -2,7 +2,7 @@
 
 > MVP desenvolvido para a disciplina de Backend/Fullstack. O objetivo é promover o turismo ecológico em Teresópolis-RJ através de um guia digital interativo.
 
-![Status](https://img.shields.io/badge/Status-Em_Desenvolvimento-yellow)
+![Status](https://img.shields.io/badge/Status-concluído-green)
 ![Python](https://img.shields.io/badge/Python-3.12+-blue)
 ![Django](https://img.shields.io/badge/Django-5.0+-green)
 ![React](https://img.shields.io/badge/Frontend-React-blue)
