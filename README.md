@@ -15,11 +15,11 @@ O **Circuito Terê Verde** é uma aplicação Fullstack que conecta turistas e a
 
 O sistema é composto por uma **API RESTful** robusta no Backend e uma **Single Page Application (SPA)** moderna no Frontend. O sistema permite que administradores gerenciem o conteúdo via painel administrativo seguro, enquanto turistas acessam informações atualizadas sobre trilhas e eventos.
 
-## 📋 Requisitos do Sistema
+##  Requisitos do Sistema
 
 O projeto foi desenvolvido atendendo aos seguintes requisitos funcionais e não-funcionais:
 
-### 👤 Requisitos Funcionais (RF)
+###  Requisitos Funcionais (RF)
 
 #### Módulo Administrativo (Gestão)
 | ID | Descrição 
