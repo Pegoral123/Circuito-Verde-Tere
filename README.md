@@ -15,6 +15,41 @@ O **Circuito Terê Verde** é uma aplicação Fullstack que conecta turistas e a
 
 O sistema é composto por uma **API RESTful** robusta no Backend e uma **Single Page Application (SPA)** moderna no Frontend. O sistema permite que administradores gerenciem o conteúdo via painel administrativo seguro, enquanto turistas acessam informações atualizadas sobre trilhas e eventos.
 
+## 📋 Requisitos do Sistema
+
+O projeto foi desenvolvido atendendo aos seguintes requisitos funcionais e não-funcionais:
+
+### 👤 Requisitos Funcionais (RF)
+
+#### Módulo Administrativo (Gestão)
+| ID | Descrição | Status |
+| :--- | :--- | :--- |
+| **RF01** | O administrador deve poder se autenticar no sistema (Login seguro). 
+| **RF02** | O administrador deve poder criar, editar e excluir (CRUD) informações dos Parques (Serra dos Órgãos, Três Picos, Montanhas de Teresópolis). 
+| **RF03** | O administrador deve poder gerenciar Trilhas associadas a um parque específico. 
+| **RF04** | O administrador deve poder gerenciar Eventos (com data, local e descrição). 
+| **RF05** | O administrador deve poder publicar "Novidades" ou atualizações de condições (ex: alertas de trilhas fechadas). 
+
+#### Módulo Visitante (Público)
+| ID | Descrição | Status |
+| :--- | :--- | :--- |
+| **RF06** | O visitante deve visualizar a lista de parques na página inicial.
+| **RF07** | O visitante deve poder acessar os detalhes de um parque (trilha). 
+| **RF08** | O visitante deve visualizar a lista de eventos futuros. 
+| **RF09** | O visitante deve visualizar as notícias e atualizações mais recentes. 
+
+### ⚙️ Requisitos Não-Funcionais (RNF)
+
+* **RNF01 - Desempenho:** O sistema deve garantir respostas ágeis na API, suportando múltiplos usuários simultâneos.
+* **RNF02 - Segurança:** A área administrativa deve ser protegida por autenticação e senhas criptografadas.
+* **RNF03 - Usabilidade:** A interface deve ser intuitiva e fácil de navegar tanto para administradores quanto para visitantes.
+* **RNF04 - Responsividade:** O Frontend deve se adaptar a dispositivos Desktop, Tablet e Mobile.
+* **RNF05 - Versionamento:** Todo o código-fonte deve ser versionado no GitHub.
+* **RNF06 - Documentação:** O projeto deve conter instruções claras de instalação e uso (README).
+* **RNF07 - Manutenibilidade:** Estrutura de diretórios organizada e código limpo.
+
+---
+
 ### Funcionalidades Principais
 
 - **Painel Administrativo (Django Admin):**
