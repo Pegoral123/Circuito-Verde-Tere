@@ -1,4 +1,4 @@
-# 🌿 Circuito Terê Verde - Fullstack Project
+Circuito Terê Verde 
 
 > MVP desenvolvido para a disciplina de Backend/Fullstack. O objetivo é promover o turismo ecológico em Teresópolis-RJ através de um guia digital interativo.
 
@@ -38,7 +38,7 @@ O projeto foi desenvolvido atendendo aos seguintes requisitos funcionais e não-
 | **RF08** | O visitante deve visualizar a lista de eventos futuros. 
 | **RF09** | O visitante deve visualizar as notícias e atualizações mais recentes. 
 
-### ⚙️ Requisitos Não-Funcionais (RNF)
+###  Requisitos Não-Funcionais (RNF)
 
 * **RNF01 - Desempenho:** O sistema deve garantir respostas ágeis na API, suportando múltiplos usuários simultâneos.
 * **RNF02 - Segurança:** A área administrativa deve ser protegida por autenticação e senhas criptografadas.
@@ -78,7 +78,7 @@ O projeto foi desenvolvido atendendo aos seguintes requisitos funcionais e não-
 
 ---
 
-## 📂 Estrutura do Repositório
+## Estrutura do Repositório
 
 - `backend/` — API Django (contém settings, models, migrations e lógica de negócio).
 - `frontend/` — Aplicação React + Vite.
