@@ -1,19 +1,17 @@
-﻿# ---- Arquivo requirements.txt LIMPO ----
 
-# Core do Django
+
+
 django
 
-# Para criar a API (DRF)
+
 djangorestframework
 
-# Para lidar com CORS (permitir que o Vue.js acesse a API)
 django-cors-headers
 
-# O "Conector" para falar com o MySQL
+
 mysqlclient
 
-# Para ler arquivos .env (boa prática, vamos usar depois)
+
 python-dotenv
 
-# Para rodar o servidor de produção (vamos usar depois)
 gunicorn
