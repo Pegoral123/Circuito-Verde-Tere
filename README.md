@@ -22,8 +22,8 @@ O projeto foi desenvolvido atendendo aos seguintes requisitos funcionais e não-
 ### 👤 Requisitos Funcionais (RF)
 
 #### Módulo Administrativo (Gestão)
-| ID | Descrição | Status |
-| :--- | :--- | :--- |
+| ID | Descrição 
+| :--- | :--- |
 | **RF01** | O administrador deve poder se autenticar no sistema (Login seguro). 
 | **RF02** | O administrador deve poder criar, editar e excluir (CRUD) informações dos Parques (Serra dos Órgãos, Três Picos, Montanhas de Teresópolis). 
 | **RF03** | O administrador deve poder gerenciar Trilhas associadas a um parque específico. 
