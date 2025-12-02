@@ -31,8 +31,8 @@ O projeto foi desenvolvido atendendo aos seguintes requisitos funcionais e não-
 | **RF05** | O administrador deve poder publicar "Novidades" ou atualizações de condições (ex: alertas de trilhas fechadas). 
 
 #### Módulo Visitante (Público)
-| ID | Descrição | Status |
-| :--- | :--- | :--- |
+| ID | Descrição 
+| :--- | :--- | 
 | **RF06** | O visitante deve visualizar a lista de parques na página inicial.
 | **RF07** | O visitante deve poder acessar os detalhes de um parque (trilha). 
 | **RF08** | O visitante deve visualizar a lista de eventos futuros. 
