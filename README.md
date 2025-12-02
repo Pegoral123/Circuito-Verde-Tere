@@ -64,7 +64,7 @@ Backend (Django)
 1. Vá para a pasta do backend e ative o ambiente virtual (ajuste o caminho se seu venv tiver outro nome):
 
 ```powershell
-cd C:\Users\Pichau\Documents\CONHECIMENTO_E_PODER\Circuito-Verde-Tere\backend
+cd C:\Circuito-Verde-Tere\backend
 .\venv\Scripts\Activate.ps1
 ```
 
@@ -120,12 +120,6 @@ npm install
 npm run dev
 ```
 
-4. Build de produção e preview:
-
-```powershell
-npm run build
-npm run preview
-```
 
 ## 👥 Autores
 
