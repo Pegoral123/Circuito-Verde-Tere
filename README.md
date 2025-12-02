@@ -1,42 +1,135 @@
-# 🌿 Circuito Terê Verde - Backend API
+# 🌿 Circuito Terê Verde - Fullstack Project
 
-> MVP de Backend desenvolvido para a disciplina de MVP da faculdade. O objetivo é promover o turismo ecológico em Teresópolis-RJ através de um guia digital.
+> MVP desenvolvido para a disciplina de Backend/Fullstack. O objetivo é promover o turismo ecológico em Teresópolis-RJ através de um guia digital interativo.
 
-![Status](https://img.shields.io/badge/Status-Concluído-success)
+![Status](https://img.shields.io/badge/Status-Em_Desenvolvimento-yellow)
 ![Python](https://img.shields.io/badge/Python-3.12+-blue)
 ![Django](https://img.shields.io/badge/Django-5.0+-green)
-![DRF](https://img.shields.io/badge/DRF-API-red)
-
-## 📖 Sobre o Projeto
-
-O **Circuito Terê Verde** é uma aplicação que conecta turistas e amantes da natureza aos parques naturais de Teresópolis.
-
-Este repositório contém a **API RESTful** (Backend) que gerencia os dados e alimenta o Frontend (Vue.js/TypeScript). O sistema permite que administradores gerenciem o conteúdo via painel administrativo e fornece endpoints públicos para consulta.
-
-### 🎯 Funcionalidades Principais
-
-* **Painel Administrativo (Django Admin):**
-    * Autenticação segura para administradores.
-    * CRUD completo de Parques, Trilhas, Eventos e Novidades.
-* **API RESTful:**
-    * Endpoints públicos para consumo do Frontend.
-    * Serialização aninhada (ex: listar trilhas dentro do detalhe do parque).
-    * Configuração de CORS para integração com aplicações externas.
+![React](https://img.shields.io/badge/Frontend-React-blue)
+![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
 ---
 
-## 🛠 Tecnologias Utilizadas
+## Sobre o Projeto
 
-* **Linguagem:** [Python](https://www.python.org/)
-* **Framework Web:** [Django](https://www.djangoproject.com/)
-* **API:** [Django REST Framework](https://www.django-rest-framework.org/)
-* **Banco de Dados:** MySQL (Conector: `PyMySQL`)
-* **Segurança:** `python-dotenv` (Variáveis de ambiente)
-* **Integração:** `django-cors-headers`
+O **Circuito Terê Verde** é uma aplicação Fullstack que conecta turistas e amantes da natureza aos parques naturais de Teresópolis.
+
+O sistema é composto por uma **API RESTful** robusta no Backend e uma **Single Page Application (SPA)** moderna no Frontend. O sistema permite que administradores gerenciem o conteúdo via painel administrativo seguro, enquanto turistas acessam informações atualizadas sobre trilhas e eventos.
+
+### Funcionalidades Principais
+
+- **Painel Administrativo (Django Admin):**
+
+  - Autenticação segura e gestão de usuários.
+  - CRUD completo de Parques, Trilhas, Eventos e Novidades.
+
+- **API RESTful:**
+
+  - Endpoints públicos otimizados para consumo do Frontend.
+  - Serialização aninhada (ex: visualização de trilhas dentro do detalhe do parque).
+  - Configuração de CORS para integração segura.
+
+- **Interface Pública (Frontend):**
+  - Visualização de parques e detalhes de trilhas.
+  - Listagem de eventos e novidades em tempo real.
 
 ---
+
+## Tecnologias Utilizadas
+
+**Backend** Python 3, Django 5, Django REST Framework (DRF)
+**Frontend** React, TypeScript, Vite, Tailwind CSS, Axios
+**Banco de Dados** MySQL (Driver: PyMySQL)
+**Segurança/Env** python-dotenv, django-cors-headers
+
+---
+
+## 📂 Estrutura do Repositório
+
+- `backend/` — API Django (contém settings, models, migrations e lógica de negócio).
+- `frontend/` — Aplicação React + Vite.
+
+---
+
+### Pré-requisitos
+
+- Python 3.10+
+- Node.js 18+
+- MySQL Server rodando
+- Git
+
+Como rodar (PowerShell)
+
+Backend (Django)
+
+1. Vá para a pasta do backend e ative o ambiente virtual (ajuste o caminho se seu venv tiver outro nome):
+
+```powershell
+cd C:\Users\Pichau\Documents\CONHECIMENTO_E_PODER\Circuito-Verde-Tere\backend
+.\venv\Scripts\Activate.ps1
+```
+
+2. Instale dependências (se necessário):
+
+```powershell
+pip install -r requirements.txt
+```
+
+3. Configure variáveis de ambiente (veja `.env.example` ou `backend/.env`), especialmente `DATABASES`.
+
+4. Gerar e aplicar migrações:
+
+```powershell
+python manage.py makemigrations
+python manage.py migrate
+```
+
+5. Criar superusuário (para acessar o admin):
+
+```powershell
+python manage.py createsuperuser
+```
+
+6. Rodar servidor de desenvolvimento:
+
+```powershell
+python manage.py runserver
+```
+
+URLs úteis (produção/desenvolvimento)
+
+- Admin Django: `http://127.0.0.1:8000/admin/`
+- Exemplo de endpoints gerados pelo router: `http://127.0.0.1:8000/parques/`, `http://127.0.0.1:8000/eventos/`
+
+Frontend (Vite + React)
+
+1. Entre na pasta do frontend:
+
+```powershell
+cd ..\frontend
+```
+
+2. Instale dependências:
+
+```powershell
+npm install
+```
+
+3. Rodar em modo desenvolvimento:
+
+```powershell
+npm run dev
+```
+
+4. Build de produção e preview:
+
+```powershell
+npm run build
+npm run preview
+```
 
 ## 👥 Autores
-Jhonathan Pegoral 
 
-Carlos 
+Jhonathan Pegoral
+
+Carlos
