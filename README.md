@@ -6,7 +6,6 @@
 ![Python](https://img.shields.io/badge/Python-3.12+-blue)
 ![Django](https://img.shields.io/badge/Django-5.0+-green)
 ![React](https://img.shields.io/badge/Frontend-React-blue)
-![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
 ---
 
