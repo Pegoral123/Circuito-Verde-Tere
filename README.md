@@ -156,7 +156,7 @@ npm run dev
 ```
 
 
-## 👥 Autores
+## Devs
 
 Jhonathan Pegoral
 
